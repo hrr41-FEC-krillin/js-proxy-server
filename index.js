@@ -11,7 +11,7 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public'));
+app.use(express.static('dist'));
 
 const port = 7000;
 app.listen(port, () => {
