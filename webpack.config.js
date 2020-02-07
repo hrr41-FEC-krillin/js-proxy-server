@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   entry: {
     moviePreview: ['@babel/polyfill', '../movie-preview/client/src/index.jsx'],
-    photoCarousel: '../photo-carousel/client/index.jsx',
+    // photoCarousel: '../photo-carousel/client/index.jsx',
     castPhotos: '../castphotos/client/index.jsx',
     audienceReviews: '../AUDIENCE-REVIEWS/client/src/index.jsx',
     criticReviews: '../CRITIC_REVIEWS/client/index.jsx',
