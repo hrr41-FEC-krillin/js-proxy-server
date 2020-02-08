@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
-const proxy = require('express-http-proxy');
+// const proxy = require('express-http-proxy');
 
 const Console = console;
 
@@ -14,9 +14,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('dist'));
 
-app.use('/api/cr_reviews', proxy('http://3.134.106.102:4540'));
-app.use('/api/movie', proxy('http://3.134.106.102:5050'));
-app.use('/api/audienceReviews', proxy('http://3.134.106.102:8100'));
+// let crUrl = process.env.CRURL || 'http://127.0.0.1:4540';
+// let castUrl = process.env.CASTURL || 'http://127.0.0.1:5050';
+// let arUrl = process.env.ARURL || 'http://127.0.0.1:8100';
+
+
+// app.use('/api/movie', proxy(castUrl));
+// app.use('/api/cr_reviews', proxy(crUrl));
+// app.use('/api/audienceReviews', proxy(arUrl));
 
 
 const port = 7000;
