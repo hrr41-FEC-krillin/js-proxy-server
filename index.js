@@ -16,6 +16,7 @@ app.use(express.static('dist'));
 
 app.use('/api/cr_reviews', proxy('http://3.134.106.102:4540'));
 app.use('/api/movie', proxy('http://3.134.106.102:5050'));
+app.use('/api/audienceReviews', proxy('http://3.134.106.102:8100'));
 
 
 const port = 7000;
