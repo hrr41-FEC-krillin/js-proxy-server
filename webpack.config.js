@@ -4,11 +4,11 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'production',
   entry: {
-    moviePreview: ['@babel/polyfill', '../movie-preview/client/src/index.jsx'],
+    // moviePreview: ['@babel/polyfill', '../movie-preview/client/src/index.jsx'],
     // photoCarousel: '../photo-carousel/client/index.jsx',
     castPhotos: '../castphotos/client/index.jsx',
-    audienceReviews: '../AUDIENCE-REVIEWS/client/src/index.jsx',
-    criticReviews: '../CRITIC_REVIEWS/client/index.jsx',
+    audienceReviews: '../audience-reviews/client/src/index.jsx',
+    criticReviews: '../critic-reviews/client/index.jsx',
   },
   output: {
     filename: '[name].bundle.js',
